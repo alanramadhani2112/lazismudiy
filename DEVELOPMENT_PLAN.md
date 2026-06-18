@@ -137,3 +137,15 @@ Status: In Progress
 - [x] Draft redirect mapping
 - [x] QA checklist
 - [ ] Production launch — pending final content/payment/hosting
+
+### Phase 9 — MVP Data & Admin Fields
+
+Status: Done
+
+- [x] Add campaign admin fields
+- [x] Add report admin fields
+- [x] Add rekening CPT and admin fields
+- [x] Show campaign progress in UI
+- [x] Show report period/file in UI
+- [x] Show active rekening in manual transfer instruction
+- [x] Seed local sample content

@@ -2,6 +2,47 @@
 
 All notable development updates are tracked here.
 
+## 0.9.0 — MVP Data and Admin Fields
+
+Date: 2026-06-18
+
+### Added
+
+- Added `rekening` custom post type.
+- Added campaign admin fields:
+  - target amount
+  - collected amount
+  - donor count
+  - featured flag
+- Added report admin fields:
+  - report period
+  - PDF file URL
+- Added rekening admin fields:
+  - bank name
+  - account number
+  - account name
+  - donation category
+  - QRIS URL
+  - active flag
+  - sort order
+- Added local MVP sample content.
+
+### Changed
+
+- Campaign cards now show progress data.
+- Campaign detail now shows target, collected amount, progress, and donors.
+- Report cards now show period and link to PDF URL when available.
+- Manual transfer instruction now shows active rekening data.
+- Updated development tracker status.
+- Rebuilt theme assets.
+
+### Verified
+
+- `npm run build` passed.
+- PHP lint passed for phase 9 files.
+- Homepage rendered sample campaign content.
+- Campaign archive rendered progress data.
+
 ## 0.8.0 — Migration and Launch Planning
 
 Date: 2026-06-18

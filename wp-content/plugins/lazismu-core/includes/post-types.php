@@ -41,6 +41,12 @@ function lazismu_core_register_post_types() {
 			'slug'     => 'faq',
 			'icon'     => 'dashicons-editor-help',
 		),
+		'rekening'     => array(
+			'singular' => __( 'Rekening', 'lazismu-core' ),
+			'plural'   => __( 'Rekening Donasi', 'lazismu-core' ),
+			'slug'     => 'rekening',
+			'icon'     => 'dashicons-bank',
+		),
 	);
 
 	foreach ( $post_types as $post_type => $config ) {

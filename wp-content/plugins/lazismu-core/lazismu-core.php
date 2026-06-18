@@ -11,6 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/includes/post-types.php';
 require_once __DIR__ . '/includes/taxonomies.php';
+require_once __DIR__ . '/includes/meta-boxes.php';
 
 register_activation_hook( __FILE__, 'lazismu_core_activate' );
 register_deactivation_hook( __FILE__, 'lazismu_core_deactivate' );

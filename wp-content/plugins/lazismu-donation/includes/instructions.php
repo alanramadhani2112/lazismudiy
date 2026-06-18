@@ -9,6 +9,28 @@ defined( 'ABSPATH' ) || exit;
 
 add_shortcode( 'lazismu_donation_instruction', 'lazismu_donation_instruction_shortcode' );
 
+function lazismu_donation_get_active_rekening() {
+	if ( ! post_type_exists( 'rekening' ) ) {
+		return array();
+	}
+
+	return get_posts(
+		array(
+			'post_type'      => 'rekening',
+			'posts_per_page' => 5,
+			'meta_key'       => '_lazismu_sort_order',
+			'orderby'        => 'meta_value_num',
+			'order'          => 'ASC',
+			'meta_query'     => array(
+				array(
+					'key'   => '_lazismu_is_active',
+					'value' => 1,
+				),
+			),
+		)
+	);
+}
+
 function lazismu_donation_instruction_shortcode() {
 	$code = isset( $_GET['donation_code'] ) ? sanitize_text_field( wp_unslash( $_GET['donation_code'] ) ) : '';
 
@@ -36,8 +58,23 @@ function lazismu_donation_instruction_shortcode() {
 		<div class="mt-6 space-y-2 text-sm text-slate-700">
 			<p><strong><?php esc_html_e( 'Metode:', 'lazismu-donation' ); ?></strong> <?php esc_html_e( 'Transfer manual', 'lazismu-donation' ); ?></p>
 			<p><strong><?php esc_html_e( 'Status:', 'lazismu-donation' ); ?></strong> <?php echo esc_html( $item->status ); ?></p>
-			<p><?php esc_html_e( 'Data rekening resmi akan disesuaikan setelah konsolidasi rekening LAZISMU DIY.', 'lazismu-donation' ); ?></p>
 		</div>
+
+		<?php $rekening = lazismu_donation_get_active_rekening(); ?>
+		<?php if ( $rekening ) : ?>
+			<div class="mt-6 space-y-3">
+				<p class="font-semibold text-brand-dark"><?php esc_html_e( 'Rekening Tujuan', 'lazismu-donation' ); ?></p>
+				<?php foreach ( $rekening as $account ) : ?>
+					<div class="rounded-xl border border-slate-200 p-4 text-sm text-slate-700">
+						<p class="font-semibold text-brand-dark"><?php echo esc_html( get_post_meta( $account->ID, '_lazismu_bank_name', true ) ); ?></p>
+						<p><?php echo esc_html( get_post_meta( $account->ID, '_lazismu_account_number', true ) ); ?></p>
+						<p><?php echo esc_html( get_post_meta( $account->ID, '_lazismu_account_name', true ) ); ?></p>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		<?php else : ?>
+			<p class="mt-6 text-sm text-slate-600"><?php esc_html_e( 'Data rekening resmi akan disesuaikan setelah konsolidasi rekening LAZISMU DIY.', 'lazismu-donation' ); ?></p>
+		<?php endif; ?>
 	</div>
 	<?php
 	return ob_get_clean();
