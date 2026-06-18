@@ -2,6 +2,35 @@
 
 All notable development updates are tracked here.
 
+## 0.5.0 — Donation Basic Flow
+
+Date: 2026-06-18
+
+### Added
+
+- Added donation custom tables:
+  - `wp_lazismu_donations`
+  - `wp_lazismu_donation_logs`
+- Added donation form shortcode: `[lazismu_donation_form]`.
+- Added manual transfer instruction shortcode: `[lazismu_donation_instruction]`.
+- Added donation admin menu.
+- Added manual status update for donation records.
+- Added donation and instruction page templates.
+- Added local donation pages.
+
+### Changed
+
+- Updated homepage donation CTA.
+- Updated development tracker status.
+- Rebuilt theme assets.
+
+### Verified
+
+- `npm run build` passed.
+- PHP lint passed for phase 5 files.
+- Local donation form page returned HTTP 200.
+- Local donation instruction page returned HTTP 200.
+
 ## 0.4.0 — Public MVP Pages
 
 Date: 2026-06-18

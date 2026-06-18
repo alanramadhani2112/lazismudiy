@@ -36,7 +36,7 @@ $posts = new WP_Query(
 				<h1 class="mt-4 text-4xl font-bold tracking-tight text-brand-dark sm:text-5xl"><?php esc_html_e( 'Tunaikan Zakat dan Sedekah untuk Kebaikan di Yogyakarta', 'lazismu-diy' ); ?></h1>
 				<p class="mt-5 text-lg leading-8 text-slate-600"><?php esc_html_e( 'Kanal resmi program, donasi, zakat, laporan, dan informasi LAZISMU DIY.', 'lazismu-diy' ); ?></p>
 				<div class="mt-8 flex flex-col gap-3 sm:flex-row">
-					<a class="btn-primary" href="<?php echo esc_url( home_url( '/campaign/' ) ); ?>"><?php esc_html_e( 'Donasi Sekarang', 'lazismu-diy' ); ?></a>
+					<a class="btn-primary" href="<?php echo esc_url( home_url( '/donasi/' ) ); ?>"><?php esc_html_e( 'Donasi Sekarang', 'lazismu-diy' ); ?></a>
 					<a class="btn-secondary" href="<?php echo esc_url( home_url( '/laporan/' ) ); ?>"><?php esc_html_e( 'Lihat Laporan', 'lazismu-diy' ); ?></a>
 				</div>
 			</div>

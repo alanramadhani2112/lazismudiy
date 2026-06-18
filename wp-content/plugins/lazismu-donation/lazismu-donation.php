@@ -8,3 +8,10 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+
+require_once __DIR__ . '/includes/database.php';
+require_once __DIR__ . '/includes/form.php';
+require_once __DIR__ . '/includes/instructions.php';
+require_once __DIR__ . '/includes/admin.php';
+
+register_activation_hook( __FILE__, 'lazismu_donation_install_tables' );

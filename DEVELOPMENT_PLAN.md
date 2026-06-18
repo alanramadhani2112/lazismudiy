@@ -97,13 +97,13 @@ Status: Done
 
 ### Phase 5 — Donation Basic Flow
 
-Status: Pending
+Status: Done
 
-- [ ] Donation form
-- [ ] Donation custom table
-- [ ] Admin transaction view
-- [ ] Manual transfer instruction
-- [ ] Pending/paid status update
+- [x] Donation form
+- [x] Donation custom table
+- [x] Admin transaction view
+- [x] Manual transfer instruction
+- [x] Pending/paid status update
 
 ### Phase 6 — Zakat Calculator
 
