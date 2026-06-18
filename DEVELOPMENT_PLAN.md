@@ -74,14 +74,14 @@ Status: Done
 
 ### Phase 3 — Core Data Plugin
 
-Status: Pending
+Status: Done
 
-- [ ] Register `program` CPT
-- [ ] Register `campaign` CPT
-- [ ] Register `impact_story` CPT
-- [ ] Register `report` CPT
-- [ ] Register `faq` CPT
-- [ ] Register core taxonomies
+- [x] Register `program` CPT
+- [x] Register `campaign` CPT
+- [x] Register `impact_story` CPT
+- [x] Register `report` CPT
+- [x] Register `faq` CPT
+- [x] Register core taxonomies
 
 ### Phase 4 — Public MVP Pages
 

@@ -2,6 +2,35 @@
 
 All notable development updates are tracked here.
 
+## 0.3.0 — Core Data Plugin
+
+Date: 2026-06-18
+
+### Added
+
+- Registered custom post types:
+  - `program`
+  - `campaign`
+  - `impact_story`
+  - `report`
+  - `faq`
+- Registered core taxonomies:
+  - `program_category`
+  - `donation_type`
+  - `beneficiary_type`
+  - `location`
+  - `asnaf_category`
+  - `report_period`
+- Added rewrite flush on plugin activation/deactivation.
+
+### Changed
+
+- Updated development tracker status.
+
+### Verified
+
+- PHP lint passed for core plugin files.
+
 ## 0.2.0 — Theme Foundation
 
 Date: 2026-06-18
