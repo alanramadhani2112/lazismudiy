@@ -2,6 +2,18 @@
 
 All notable development updates are tracked here.
 
+## 0.7.0 — Payment Gateway Hold
+
+Date: 2026-06-18
+
+### Changed
+
+- Marked Phase 7 payment gateway as on hold.
+
+### Notes
+
+- Gateway integration will continue after vendor choice is final.
+
 ## 0.6.0 — Zakat Calculator
 
 Date: 2026-06-18

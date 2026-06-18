@@ -116,13 +116,15 @@ Status: Done
 
 ### Phase 7 — Payment Gateway
 
-Status: Pending
+Status: On Hold
 
 - [ ] Choose gateway
 - [ ] Sandbox integration
 - [ ] Webhook handler
 - [ ] Signature validation
 - [ ] Status sync
+
+Note: Held until payment gateway decision is final.
 
 ### Phase 8 — Migration & Launch
 
