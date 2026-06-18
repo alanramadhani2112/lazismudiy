@@ -1,0 +1,35 @@
+# Ignore everything by default.
+*
+
+# Track project docs.
+!.gitignore
+!README.md
+!DEVELOPMENT_PLAN.md
+!CHANGELOG.md
+
+# Track custom theme.
+!wp-content/
+!wp-content/themes/
+!wp-content/themes/lazismu-diy/
+!wp-content/themes/lazismu-diy/**
+
+# Track custom plugins.
+!wp-content/plugins/
+!wp-content/plugins/lazismu-core/
+!wp-content/plugins/lazismu-core/**
+!wp-content/plugins/lazismu-donation/
+!wp-content/plugins/lazismu-donation/**
+!wp-content/plugins/lazismu-zakat/
+!wp-content/plugins/lazismu-zakat/**
+!wp-content/plugins/lazismu-reporting/
+!wp-content/plugins/lazismu-reporting/**
+
+# Local/sensitive.
+wp-config.php
+.env
+*.log
+
+# Build/deps.
+node_modules/
+wp-content/themes/lazismu-diy/assets/dist/*
+!wp-content/themes/lazismu-diy/assets/dist/.gitkeep
