@@ -2,6 +2,37 @@
 
 All notable development updates are tracked here.
 
+## 0.2.0 — Theme Foundation
+
+Date: 2026-06-18
+
+### Added
+
+- Added Tailwind CSS build config.
+- Added Vite build config.
+- Added PostCSS config.
+- Added frontend build scripts.
+- Added compiled theme assets.
+- Added base Tailwind component classes:
+  - `container-site`
+  - `btn-primary`
+  - `btn-secondary`
+  - `card-base`
+  - `input-base`
+- Added responsive header navigation toggle.
+- Added homepage starter hero and quick action layout.
+
+### Changed
+
+- Updated theme enqueue to load built CSS/JS assets.
+- Updated footer layout.
+- Updated development tracker status.
+
+### Verified
+
+- `npm run build` passed.
+- PHP lint passed for changed theme files.
+
 ## 0.1.0 — Project Foundation
 
 Date: 2026-06-18

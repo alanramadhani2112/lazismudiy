@@ -1,11 +1,16 @@
 # Ignore everything by default.
 *
 
-# Track project docs.
+# Track project docs/config.
 !.gitignore
 !README.md
 !DEVELOPMENT_PLAN.md
 !CHANGELOG.md
+!package.json
+!package-lock.json
+!tailwind.config.js
+!postcss.config.js
+!vite.config.js
 
 # Track custom theme.
 !wp-content/
@@ -29,7 +34,5 @@ wp-config.php
 .env
 *.log
 
-# Build/deps.
+# Dependencies.
 node_modules/
-wp-content/themes/lazismu-diy/assets/dist/*
-!wp-content/themes/lazismu-diy/assets/dist/.gitkeep
