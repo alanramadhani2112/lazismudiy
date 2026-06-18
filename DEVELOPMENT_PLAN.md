@@ -85,15 +85,15 @@ Status: Done
 
 ### Phase 4 — Public MVP Pages
 
-Status: Pending
+Status: Done
 
-- [ ] Homepage
-- [ ] Profile page
-- [ ] Campaign listing
-- [ ] Campaign detail
-- [ ] Report page
-- [ ] News templates
-- [ ] Contact page
+- [x] Homepage
+- [x] Profile page
+- [x] Campaign listing
+- [x] Campaign detail
+- [x] Report page
+- [x] News templates
+- [x] Contact page
 
 ### Phase 5 — Donation Basic Flow
 

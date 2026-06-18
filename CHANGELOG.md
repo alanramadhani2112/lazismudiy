@@ -2,6 +2,31 @@
 
 All notable development updates are tracked here.
 
+## 0.4.0 — Public MVP Pages
+
+Date: 2026-06-18
+
+### Added
+
+- Added homepage template with hero, campaign, report, and article sections.
+- Added campaign archive and detail templates.
+- Added report archive and detail templates.
+- Added news index and single post templates.
+- Added profile page template.
+- Added contact page template.
+- Added reusable cards for campaign, report, and article content.
+- Added basic article content styling.
+
+### Changed
+
+- Updated development tracker status.
+- Rebuilt theme assets.
+
+### Verified
+
+- `npm run build` passed.
+- PHP lint passed for phase 4 theme files.
+
 ## 0.3.0 — Core Data Plugin
 
 Date: 2026-06-18
