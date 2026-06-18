@@ -107,12 +107,12 @@ Status: Done
 
 ### Phase 6 — Zakat Calculator
 
-Status: Pending
+Status: Done
 
-- [ ] Zakat penghasilan calculator
-- [ ] Zakat maal basic calculator
-- [ ] Nisab setting
-- [ ] Continue to payment form
+- [x] Zakat penghasilan calculator
+- [x] Zakat maal basic calculator
+- [x] Nisab setting
+- [x] Continue to payment form
 
 ### Phase 7 — Payment Gateway
 

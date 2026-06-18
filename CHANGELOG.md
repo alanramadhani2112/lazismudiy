@@ -2,6 +2,34 @@
 
 All notable development updates are tracked here.
 
+## 0.6.0 — Zakat Calculator
+
+Date: 2026-06-18
+
+### Added
+
+- Added zakat settings page.
+- Added configurable gold price and monthly income nisab.
+- Added zakat calculator shortcode: `[lazismu_zakat_calculator]`.
+- Added zakat penghasilan calculation.
+- Added zakat maal calculation.
+- Added zakat page template.
+- Added local zakat page.
+
+### Changed
+
+- Donation form now supports amount and type prefill from query params.
+- Homepage quick action now links to zakat page.
+- Updated development tracker status.
+- Rebuilt theme assets.
+
+### Verified
+
+- `npm run build` passed.
+- PHP lint passed for phase 6 files.
+- Local zakat calculator returned correct estimate.
+- Donation form amount prefill worked.
+
 ## 0.5.0 — Donation Basic Flow
 
 Date: 2026-06-18

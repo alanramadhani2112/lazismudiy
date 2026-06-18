@@ -12,6 +12,9 @@ add_action( 'admin_post_nopriv_lazismu_submit_donation', 'lazismu_donation_handl
 add_action( 'admin_post_lazismu_submit_donation', 'lazismu_donation_handle_submit' );
 
 function lazismu_donation_form_shortcode() {
+	$selected_type = isset( $_GET['type'] ) ? sanitize_key( wp_unslash( $_GET['type'] ) ) : 'zakat';
+	$amount        = isset( $_GET['amount'] ) ? absint( wp_unslash( $_GET['amount'] ) ) : '';
+
 	ob_start();
 	?>
 	<form class="card-base space-y-4" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
@@ -21,17 +24,17 @@ function lazismu_donation_form_shortcode() {
 		<label class="block">
 			<span class="mb-2 block text-sm font-semibold"><?php esc_html_e( 'Jenis Donasi', 'lazismu-donation' ); ?></span>
 			<select class="input-base" name="donation_type" required>
-				<option value="zakat"><?php esc_html_e( 'Zakat', 'lazismu-donation' ); ?></option>
-				<option value="infak"><?php esc_html_e( 'Infak', 'lazismu-donation' ); ?></option>
-				<option value="sedekah"><?php esc_html_e( 'Sedekah', 'lazismu-donation' ); ?></option>
-				<option value="wakaf"><?php esc_html_e( 'Wakaf', 'lazismu-donation' ); ?></option>
-				<option value="campaign"><?php esc_html_e( 'Campaign', 'lazismu-donation' ); ?></option>
+				<option value="zakat" <?php selected( $selected_type, 'zakat' ); ?>><?php esc_html_e( 'Zakat', 'lazismu-donation' ); ?></option>
+				<option value="infak" <?php selected( $selected_type, 'infak' ); ?>><?php esc_html_e( 'Infak', 'lazismu-donation' ); ?></option>
+				<option value="sedekah" <?php selected( $selected_type, 'sedekah' ); ?>><?php esc_html_e( 'Sedekah', 'lazismu-donation' ); ?></option>
+				<option value="wakaf" <?php selected( $selected_type, 'wakaf' ); ?>><?php esc_html_e( 'Wakaf', 'lazismu-donation' ); ?></option>
+				<option value="campaign" <?php selected( $selected_type, 'campaign' ); ?>><?php esc_html_e( 'Campaign', 'lazismu-donation' ); ?></option>
 			</select>
 		</label>
 
 		<label class="block">
 			<span class="mb-2 block text-sm font-semibold"><?php esc_html_e( 'Nominal', 'lazismu-donation' ); ?></span>
-			<input class="input-base" type="number" name="amount" min="1000" step="1000" required>
+			<input class="input-base" type="number" name="amount" min="1000" step="1000" value="<?php echo esc_attr( $amount ); ?>" required>
 		</label>
 
 		<label class="block">

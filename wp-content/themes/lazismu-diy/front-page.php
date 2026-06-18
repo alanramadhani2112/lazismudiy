@@ -43,7 +43,7 @@ $posts = new WP_Query(
 			<div class="card-base bg-gradient-to-br from-orange-50 to-yellow-50">
 				<p class="text-sm font-semibold text-brand-orange"><?php esc_html_e( 'Quick Action', 'lazismu-diy' ); ?></p>
 				<div class="mt-5 grid gap-3 sm:grid-cols-2">
-					<a class="card-base p-4 hover:border-brand-orange" href="<?php echo esc_url( home_url( '/campaign/' ) ); ?>"><?php esc_html_e( 'Zakat Penghasilan', 'lazismu-diy' ); ?></a>
+					<a class="card-base p-4 hover:border-brand-orange" href="<?php echo esc_url( home_url( '/zakat/' ) ); ?>"><?php esc_html_e( 'Zakat Penghasilan', 'lazismu-diy' ); ?></a>
 					<a class="card-base p-4 hover:border-brand-orange" href="<?php echo esc_url( home_url( '/campaign/' ) ); ?>"><?php esc_html_e( 'Infak/Sedekah', 'lazismu-diy' ); ?></a>
 					<a class="card-base p-4 hover:border-brand-orange" href="<?php echo esc_url( home_url( '/program/' ) ); ?>"><?php esc_html_e( 'Program Kemanusiaan', 'lazismu-diy' ); ?></a>
 					<a class="card-base p-4 hover:border-brand-orange" href="<?php echo esc_url( home_url( '/kontak/' ) ); ?>"><?php esc_html_e( 'Konsultasi WhatsApp', 'lazismu-diy' ); ?></a>
