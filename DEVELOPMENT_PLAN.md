@@ -128,12 +128,12 @@ Note: Held until payment gateway decision is final.
 
 ### Phase 8 — Migration & Launch
 
-Status: Pending
+Status: In Progress
 
-- [ ] Audit old content
-- [ ] Audit DonasiAja data
-- [ ] Audit Elementor content
-- [ ] Migrate priority content
-- [ ] Redirect mapping
-- [ ] QA checklist
-- [ ] Production launch
+- [x] Audit old content from public baseline
+- [ ] Audit DonasiAja data — blocked until old backend/database access
+- [ ] Audit Elementor content — blocked until old backend/database access
+- [ ] Migrate priority content — pending content export
+- [x] Draft redirect mapping
+- [x] QA checklist
+- [ ] Production launch — pending final content/payment/hosting

@@ -6,6 +6,10 @@
 !README.md
 !DEVELOPMENT_PLAN.md
 !CHANGELOG.md
+!MIGRATION_PLAN.md
+!REDIRECT_MAPPING.md
+!QA_CHECKLIST.md
+!LAUNCH_CHECKLIST.md
 !package.json
 !package-lock.json
 !tailwind.config.js

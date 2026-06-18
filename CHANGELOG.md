@@ -2,6 +2,27 @@
 
 All notable development updates are tracked here.
 
+## 0.8.0 — Migration and Launch Planning
+
+Date: 2026-06-18
+
+### Added
+
+- Added migration plan.
+- Added redirect mapping draft.
+- Added QA checklist.
+- Added launch checklist.
+
+### Changed
+
+- Updated Phase 8 tracker status.
+- Marked old backend-dependent items as blocked.
+
+### Notes
+
+- DonasiAja and Elementor migration need old backend/database access.
+- Production launch needs final content, hosting, and payment decision.
+
 ## 0.7.0 — Payment Gateway Hold
 
 Date: 2026-06-18
